@@ -10,6 +10,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://mirrors.huaweicloud.com/repository/maven/") }
     }
 
     val vNav = "2.3.5"
@@ -36,6 +37,7 @@ subprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://mirrors.huaweicloud.com/repository/maven/") }
         maven { url = uri("https://jitpack.io") }
     }
 
