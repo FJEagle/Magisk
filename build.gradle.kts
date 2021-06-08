@@ -8,9 +8,9 @@ plugins {
 
 buildscript {
     repositories {
+        maven { url = uri("https://mirrors.huaweicloud.com/repository/maven/") }
         google()
         mavenCentral()
-        maven { url = uri("https://mirrors.huaweicloud.com/repository/maven/") }
     }
 
     val vNav = "2.3.5"
@@ -35,9 +35,9 @@ fun Project.android(configuration: BaseExtension.() -> Unit) =
 
 subprojects {
     repositories {
+        maven { url = uri("https://mirrors.huaweicloud.com/repository/maven/") }
         google()
         mavenCentral()
-        maven { url = uri("https://mirrors.huaweicloud.com/repository/maven/") }
         maven { url = uri("https://jitpack.io") }
     }
 
